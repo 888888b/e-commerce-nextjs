@@ -1,0 +1,17 @@
+.categories-section .embla__container {
+    column-gap: 20px;
+    padding: 20px 16px;
+    box-sizing: border-box;
+}
+
+.categories-section .embla__slide {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.20);
+}

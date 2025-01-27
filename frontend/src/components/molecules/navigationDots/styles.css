@@ -1,0 +1,14 @@
+.dots-container, .bottom-center, .top-right {
+    display: flex;
+    column-gap: 8px;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-right {
+    position: absolute;
+    top: 0;
+    right: 16px;
+    transform: translateY(-17px);
+}

@@ -9,10 +9,23 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: '#ffffff',
+        secondary: '#2C2C2C',
+        background: '#EFEFEF',
+        accent: '#157F1F'
       },
+
+      fontFamily: {
+        roboto: ['var(--font-roboto)', 'helvetica', 'sans-serif']
+      }
     },
   },
-  plugins: [],
+
+  plugins: [
+    require('daisyui')
+  ],
+
+  daisyui: {
+    themes: []
+  },
 } satisfies Config;

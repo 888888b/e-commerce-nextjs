@@ -1,0 +1,14 @@
+
+.header-slides .embla__container {
+    column-gap: 10px;
+    padding-bottom: 15px;
+}
+
+.header-slides .embla__slide {
+    width: calc(100% - 32px);
+    border-radius: 6px;
+    position: relative;
+    min-height: 150px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
