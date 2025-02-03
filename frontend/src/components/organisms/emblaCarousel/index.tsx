@@ -46,18 +46,19 @@ const EmblaCarousel = memo(( props: EmblaCarouselProps ) => {
     //     onNextButtonClick
     // } = usePrevNextButtons(emblaApi);
 
-    useEffect(() => {
-        if ( emblaApi ) {
-            props.autoplay && emblaApi.reInit({}, [autoplay({delay: 7000, stopOnInteraction: false})]);
-            emblaApi.on('slidesChanged', () => scrollToIndex( 0 ));
-        };
-    }, [ emblaApi ]);
 
     const scrollToIndex = useCallback(( index: number ) => {
-        if ( emblaApi ) {
-            emblaApi.scrollTo( index )
-        };
+        emblaApi?.scrollTo( index )
     }, [ emblaApi ]);
+
+    useEffect(() => {
+        if ( emblaApi ) {
+            if ( props.autoplay ) {
+                emblaApi.reInit({}, [autoplay({delay: 7000, stopOnInteraction: false})]);
+            };
+            emblaApi.on('slidesChanged', () => scrollToIndex( 0 ));
+        };
+    }, [ emblaApi, props.autoplay, scrollToIndex ]);
 
     return (
         <div>

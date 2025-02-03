@@ -1,5 +1,3 @@
-import { DOMAttributes, MouseEventHandler } from "react";
-
 type Props = {
     onPrevButtonClick: () => void;
 };

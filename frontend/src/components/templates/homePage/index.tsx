@@ -6,7 +6,6 @@ import CategoriesSection from "@/components/organisms/categoriesSection"
 import Footer from "@/components/organisms/footer"
 
 import car_img from '#/public/car.webp';
-import house_img from '#/public/house.webp';
 import cellphone from '#/public/cellphone.webp';
 import shoe_img from '#/public/shoe.webp';
 import pressure_washer from '#/public/pressure_washer.webp';
