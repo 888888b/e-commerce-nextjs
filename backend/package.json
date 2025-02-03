@@ -1,10 +1,20 @@
 {
   "dependencies": {
+    "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.6",
     "@types/sequelize": "^4.28.20",
+    "bcrypt": "^5.1.1",
+    "crypto": "^1.0.1",
     "express": "^4.21.2",
     "sequelize": "^6.37.5",
     "typescript": "^5.7.3"
+  },
+  "scripts": {
+    "dev": "tsx -r dotenv/config --watch src/server.ts"
+  },
+  "devDependencies": {
+    "dotenv": "^16.4.7",
+    "tsx": "^4.19.2"
   }
 }
