@@ -1,0 +1,23 @@
+.footer-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px;
+}
+
+@media screen and ( width >= 600px ) {
+    .footer-wrapper {
+        grid-template-columns: auto auto auto;
+    }   
+}
+
+@media screen and ( width >= 1024px ) {
+    .footer-wrapper {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media screen and ( width >= 1200px ) {
+    .footer-wrapper {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}

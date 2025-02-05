@@ -6,7 +6,7 @@ import userIcon from '#/public/user.png';
 
 export default function NavIcons() {
     return (
-        <div className="flex items-center gap-x-3">
+        <div className="flex items-center gap-x-3 *:cursor-pointer">
             <div className="w-8 h-8 relative">
                 <Image
                     src={heartIcon}

@@ -5,13 +5,11 @@ import logo from '#/public/project_logo.png';
 export const ProjectLogo = () => {
     return (
         <Link href={'/'}>
-            <div className="w-[110px] h-8 relative">
+            <div className="">
                 <Image
                     src={logo}
                     alt="Logo do e-commerce zillus shop"
-                    fill
-                    sizes="100%"
-                    className="object-cover"
+                    className="object-contain w-auto h-9 lg:h-10"
                 />
             </div>
         </Link>

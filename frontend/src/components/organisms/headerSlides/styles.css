@@ -8,7 +8,36 @@
     width: calc(100% - 32px);
     border-radius: 6px;
     position: relative;
-    min-height: 150px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-slides .hero-image {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+}
+
+@media screen and ( width >= 768px ) {
+    .header-slides .embla__slide {
+        width: calc(100% - 48px);
+    }
+
+    .header-slides .embla__container {
+        column-gap: 15px;
+    }
+}
+
+@media screen and ( width >= 1024px ) {
+    .header-slides .embla__slide {
+        width: 100%;
+    }  
+
+    .header-slides .embla__container {
+        gap: 0;
+    }
+
+    .header-slides .embla__slide {
+        border-radius: 0;
+    }
 }
 

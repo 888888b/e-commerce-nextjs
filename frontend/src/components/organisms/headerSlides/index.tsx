@@ -9,6 +9,7 @@ import Image from "next/image";
 import './styles.css';
 
 export default function HeaderSlides() {
+    
     const slides = [
         {
             img: hero_poster_1,
@@ -44,9 +45,7 @@ export default function HeaderSlides() {
                             <Image
                                 src={slide.img}
                                 alt="Poster de promoções e ofertas no Zillus Shop"
-                                className='object-cover'
-                                fill
-                                sizes='100%'
+                                className='object-cover hero-image'
                                 priority
                             />
                         </div>

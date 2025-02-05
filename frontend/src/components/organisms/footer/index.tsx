@@ -11,15 +11,17 @@ import visa_icon from '#/public/visa.png';
 import mercadopago_icon from '#/public/mercado_pago.png';
 import mastercard_icon from '#/public/master_card.png';
 
+import './styles.css';
+
 type Props = HTMLAttributes<HTMLElement>;
 
 export default function Footer( props: Props ) {
     const { className, ...rest } = props;
 
     return (
-        <section {...rest} className={`px-4 py-10 bg-secondary flex flex-col gap-y-10 text-base text-primary/70 ${className}`}>
+        <section {...rest} className={`footer-wrapper py-10 bg-secondary text-base md:text-[17px] text-primary/70 ${className}`}>
             {/* Coluna 1 */}
-            <div>
+            <div className="order-1 max-w-64">
                 <ProjectLogo/>
                 <div className="mt-7 flex flex-col gap-y-3">
                     <p>
@@ -37,7 +39,7 @@ export default function Footer( props: Props ) {
             </div>
 
             {/* Coluna 2 */}
-            <div>
+            <div className="order-2">
                 <h3 className="text-2xl font-medium text-primary">Empresa</h3>
                 <div className="mt-5 flex flex-col gap-y-3">
                     <p>Sobre nós</p>
@@ -49,7 +51,7 @@ export default function Footer( props: Props ) {
             </div>
 
             {/* Coluna 3 */}
-            <div>
+            <div className="order-3">
                 <h3 className="text-2xl font-medium text-primary">Loja</h3>
                 <div className="mt-5 flex flex-col gap-y-3">
                     <p>Destaques</p>
@@ -61,7 +63,7 @@ export default function Footer( props: Props ) {
             </div>
 
             {/* Coluna 4 */}
-            <div>
+            <div className="order-4">
                 <h3 className="text-2xl font-medium text-primary">Ajuda</h3>
                 <div className="mt-5 flex flex-col gap-y-3">
                     <p>Serviço ao cliente</p>
@@ -73,7 +75,7 @@ export default function Footer( props: Props ) {
             </div>
 
             {/* Coluna 5 */}
-            <div>
+            <div className="order-5 min-[600px]:col-span-2 min-[1200px]:col-span-1">
                 <h3 className="text-2xl font-medium text-primary">Inscrição</h3>
                 <div className="mt-5 flex flex-col gap-y-3">
                     <p>

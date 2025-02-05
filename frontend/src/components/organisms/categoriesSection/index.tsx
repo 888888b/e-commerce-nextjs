@@ -22,7 +22,7 @@ export default function CategoriesSection( props: Props ) {
     const { categories, className } = props;
     return (
         <div className={`categories-section flex flex-col ${className}`}>
-            <SectionTitle className="ml-4">Categorias</SectionTitle>
+            <SectionTitle className="">Categorias</SectionTitle>
 
             <EmblaCarousel 
                 navigationType='dots' 

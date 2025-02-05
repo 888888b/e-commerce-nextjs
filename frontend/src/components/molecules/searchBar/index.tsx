@@ -7,7 +7,7 @@ export default function SearchBar() {
     return (
         <div className="bg-primary rounded-md overflow-hidden flex items-center">
             <SearchInput/>
-            <div className="h-7 w-8 relative mr-4">
+            <div className="h-7 w-8 relative mr-4 cursor-pointer">
                 <Image
                     src={searchIcon}
                     alt="Icone de uma lupa"

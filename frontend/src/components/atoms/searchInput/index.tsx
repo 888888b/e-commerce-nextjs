@@ -3,7 +3,7 @@ export const SearchInput = () => {
         <input 
             type="text" 
             name="search"
-            className="w-full h-12 placeholder:text-neutral-500 px-4 font-medium border-none outline-none"
+            className="w-full h-12 placeholder:text-neutral-500 px-4 font-medium border-none outline-none md:text-[17px]"
             placeholder="Buscar produtos"
         />
     );

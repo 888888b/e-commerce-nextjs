@@ -73,6 +73,45 @@ export default function ProductSlides( props: Props ) {
             price: 332.90,
             parcels: 3,
             discount: 12
+        },
+        {
+            id: 5,
+            img: stove_img,
+            description: 'Fogão Portátil Prático Potente Para Preparos Perfeitos',
+            ranting: 3.5,
+            price: 332.90,
+            parcels: 3,
+            discount: 12
+        },
+
+        {
+            id: 6,
+            img: screw_machine,
+            description: 'Parafusadeira Potente Prática Portátil Para Projetos Profissionais',
+            ranting: 2.5,
+            price: 332.90,
+            parcels: 3,
+            discount: 12
+        },
+
+        {
+            id: 7,
+            img: closet_img,
+            description: 'Guarda-Roupas Grande Moderno Funcional Para Organização Perfeita',
+            ranting: 5,
+            price: 332.90,
+            parcels: 3,
+            discount: 12
+        },
+
+        {
+            id: 8,
+            img: stove_img,
+            description: 'Fogão Portátil Prático Potente Para Preparos Perfeitos',
+            ranting: 1.5,
+            price: 332.90,
+            parcels: 3,
+            discount: 12
         }
     ];
 
@@ -96,7 +135,7 @@ export default function ProductSlides( props: Props ) {
                             <Image
                                 src={slide.img}
                                 alt="Imagem do produto"
-                                className="product-image"
+                                className="product-image object-contain"
                             />
                         </ProductImage>
 
